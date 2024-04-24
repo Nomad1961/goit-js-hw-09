@@ -77,12 +77,6 @@ images.forEach(image => {
   link.classList.add('gallery-link');
   link.href = image.large;
 
-  // Добавляем обработчик события click
-  link.addEventListener('click', event => {
-    // Предотвращаем стандартное действие браузера
-    event.preventDefault();
-  });
-
   const img = document.createElement('img');
   img.classList.add('gallery-image');
   img.src = image.small;
